@@ -1,0 +1,34 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "service_BusNamespace_Name": {
+            "value": "vz-asb-j2020"
+        },
+        "serviceBusTopicName": {
+            "value": [
+                "vz-Topic1",
+                "vz-Topic2",
+                "vz-Topic3",
+                "vz-Topic4",
+                "vz-Topic5",
+                "vz-Topic6",
+                "vz-Topic7",
+                "vz-Topic8",
+                "vz-Topic9",
+                "vz-Topic10",
+                "vz-Topic11",
+                "vz-Topic12",
+                "vz-Topic13",
+                "vz-Topic14",
+                "vz-Topic15"
+            ]
+        },
+        "serviceBusSubscriptionName-Suffix": {
+            "value": "-rv-sub"
+        },
+        "location": {
+            "value": "eastus2"
+        }
+    }
+}
