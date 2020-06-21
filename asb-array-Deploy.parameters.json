@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "service_BusNamespace_Name": {
-            "value": "vz-asb-001"
+            "value": "vz-asb-0001"
         },
         "serviceBusTopicName": {
             "value": [
