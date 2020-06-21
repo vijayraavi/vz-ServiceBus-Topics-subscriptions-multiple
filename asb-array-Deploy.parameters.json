@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "service_BusNamespace_Name": {
-            "value": "vz-asb-j2020"
+            "value": "vz-asb-001"
         },
         "serviceBusTopicName": {
             "value": [
@@ -25,7 +25,7 @@
             ]
         },
         "serviceBusSubscriptionName-Suffix": {
-            "value": "-rv-sub"
+            "value": "-vr-sb"
         },
         "location": {
             "value": "eastus2"

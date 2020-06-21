@@ -51,14 +51,15 @@
               "[resourceId('Microsoft.ServiceBus/namespaces/', parameters('service_BusNamespace_Name'))]"
             ],
             "properties": {
-              "defaultMessageTimeToLive": "P10675199DT2H48M5.4775807S",
-              "maxSizeInMegabytes": "1024",
+              "defaultMessageTimeToLive": "P7D",
+              "maxSizeInMegabytes": "16384",
               "requiresDuplicateDetection": "false",
               "duplicateDetectionHistoryTimeWindow": "PT10M",
-              "enableBatchedOperations": "false",
+              "enableBatchedOperations": "true",
+              "status": "Active",
               "supportOrdering": "false",
               "autoDeleteOnIdle": "P10675199DT2H48M5.4775807S",
-              "enablePartitioning": "false",
+              "enablePartitioning": "true",
               "enableExpress": "false"
             },
             "copy": {
@@ -75,13 +76,15 @@
                     "[resourceId('Microsoft.ServiceBus/namespaces/topics', parameters('service_BusNamespace_Name'), toLower(parameters('serviceBusTopicName')[copyIndex()]))]"
             ],
                 "properties": {
-                  "lockDuration": "PT1M",
+                  "lockDuration": "PT30S",
                   "requiresSession": "false",
-                  "defaultMessageTimeToLive": "P10675199DT2H48M5.4775807S",
+                  "defaultMessageTimeToLive": "P7D",
                   "deadLetteringOnMessageExpiration": "false",
+                  "deadLetteringOnFilterEvaluationExceptions": "false",
                   "maxDeliveryCount": "1",
-                  "enableBatchedOperations": "false",
-                  "autoDeleteOnIdle": "P10675199DT2H48M5.4775807S"
+                  "status": "Active",
+                  "enableBatchedOperations": "true",
+                  "autoDeleteOnIdle": "P7D"
                 },
             "copy": {
                     "name": "Create Topics and Subs",
