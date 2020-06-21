@@ -52,7 +52,7 @@
             ],
             "properties": {
               "defaultMessageTimeToLive": "P7D",
-              "maxSizeInMegabytes": "5120",
+              "maxSizeInMegabytes": "1024",
               "requiresDuplicateDetection": "false",
               "duplicateDetectionHistoryTimeWindow": "PT10M",
               "enableBatchedOperations": "true",
